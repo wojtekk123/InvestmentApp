@@ -11,6 +11,7 @@ import com.example.InvestmentApp.Dao.Entity.Investment;
 
 import java.time.LocalDate;
 import java.util.Date;
+import java.util.Optional;
 
 
 @Service
@@ -30,6 +31,10 @@ public class ResultManager {
         return resultRepo.save(result);
     }
 
+
+    public Optional<Result> findById(Long id){
+        return resultRepo.findById(id);
+    }
 
     public Result calculate(Long investmentId, Double amount, String algorithmType) {
 

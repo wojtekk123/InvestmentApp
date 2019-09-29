@@ -42,5 +42,11 @@ public class InvestmentApi {
     return result;
     }
 
+    @GetMapping("/calculation/{id}")
+    public Result getAllResult(@PathVariable(value ="id") Long id){
+        return resultManager.findById(id).get();
+    }
+
+
 
 }
