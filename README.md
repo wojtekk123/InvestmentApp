@@ -33,7 +33,7 @@ Its allows you to create a deposit, download a list of deposits, calculate inter
     }<br><br>
 </li>
 <li>To fetch a individual calculations use GET method whit adress:<br>
-	<b>localhost:8080/investment/</b> </li>
+	<b>localhost:8080/calculations/{id}</b> </li>
 
 </ul>
 <br>
