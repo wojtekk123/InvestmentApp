@@ -25,7 +25,7 @@ Its allows you to create a deposit, download a list of deposits, calculate inter
 	</li>
 <li>
 	To counting profit using one of two algorithm use POST method with URL address : <br>
-	<b>localhost:8080/investment/{id}/calculation </b><br>
+	<b>localhost:8080/investment/{id}/calculate </b><br>
 	and JSON body like :<br>
 	{ <br>
         "amount":1000, <br>
