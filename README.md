@@ -16,8 +16,8 @@ Its allows you to create a deposit, download a list of deposits, calculate inter
 	<b>localhost:8080/investment/add</b> <br>
 	and JSON body like :<br>
 	 {<br>
-        "id": 1,<br>
-        "investmentName": "firstInvestment",<br>
+  
+        "investmentName": "SomeInvestment",<br>
         "interest": 4,<br>
         "validFrom": "2003-01-02",<br>
         "validTo": "2004-01-31"<br>
