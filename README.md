@@ -32,7 +32,8 @@ Its allows you to create a deposit, download a list of deposits, calculate inter
         "algorithmType":"TOTAL"<br>
     }<br><br>
 </li>
-<li>The last function about history calculation is not ready yet </li>
+<li>To fetch a individual calculations use GET method whit adress:<br>
+	<b>localhost:8080/investment/</b> </li>
 
 </ul>
 <br>
