@@ -11,12 +11,12 @@ Its allows you to create a deposit, download a list of deposits, calculate inter
 <li>To fetch a deposits list use GET method whit URL address:<br>
 	<b>localhost:8080/investment/</b>
 </li>
-
+<br>
 <li>To add a new deposit use PUT method with URL address<br>
 	<b>localhost:8080/investment/add</b> <br>
 	and JSON body like :<br>
-	 {
-        <br>
+	 {<br>
+        "id": 1,<br>
         "investmentName": "firstInvestment",<br>
         "interest": 4,<br>
         "validFrom": "2003-01-02",<br>
@@ -25,18 +25,15 @@ Its allows you to create a deposit, download a list of deposits, calculate inter
 	</li>
 <li>
 	To counting profit using one of two algorithm use POST method with URL address : <br>
-	<b>localhost:8080/investment/{id}/calculate </b><br>
+	<b>localhost:8080/investment/{id}/calculation </b><br>
 	and JSON body like :<br>
 	{ <br>
         "amount":1000, <br>
         "algorithmType":"TOTAL"<br>
     }<br><br>
 </li>
-<li>
-to to fetch individual calculated investment use GET method whit URL address:
- <b>localhost:8080/calculation/{id}</b>
- </li>
+<li>The last function about history calculation is not ready yet </li>
 
 </ul>
 <br>
- size="3">MySql database is currently used in the project
+<font size="3">MySql database is currently used in the project</font>
