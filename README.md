@@ -16,21 +16,23 @@ Its allows you to create a deposit, download a list of deposits, calculate inter
 	<b>localhost:8080/investment/add</b> <br>
 	and JSON body like :<br>
 	 {<br>
-  
-        "investmentName": "SomeInvestment",<br>
+        "investmentName": "firstInvestment",<br>
         "interest": 4,<br>
         "validFrom": "2003-01-02",<br>
         "validTo": "2004-01-31"<br>
     } <br>
 	</li>
 <li>
+	
+
+<li>
 	To counting profit using one of two algorithm use POST method with URL address : <br>
 	<b>localhost:8080/investment/{id}/calculate </b><br>
 	and JSON body like :<br>
-	{ <br>
+	 <br>
         "amount":1000, <br>
         "algorithmType":"TOTAL"<br>
-    }<br><br>
+    <br><br>
 </li>
 <li>The last function about history calculation is not ready yet </li>
 
