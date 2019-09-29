@@ -31,8 +31,8 @@ public class InvestmentManager {
     @EventListener(ApplicationReadyEvent.class)
     public void fillDB() {
 
-        save( new Investment(1L,"first",0.04, LocalDate.of(2003,1,3),LocalDate.of(2004,2,1)));
-        save( new Investment(2L,"sec",0.04, LocalDate.of(2003,1,3),LocalDate.of(2004,2,1)));
+        save( new Investment(1L,"first",4D, LocalDate.of(2003,1,3),LocalDate.of(2004,2,1)));
+        save( new Investment(2L,"sec",4D, LocalDate.of(2003,1,3),LocalDate.of(2004,2,1)));
 
     }
 

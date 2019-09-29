@@ -41,9 +41,8 @@ public class ResultManager {
         Date currentDate = new Date();
 
 
-
-
         InvestmentAlgorithm algorithm = factory.createAlgorithm(algorithmType);
+
         if (algorithm == null) {
             throw  new NullPointerException();
         }
@@ -51,7 +50,7 @@ public class ResultManager {
 
         Result result = new Result(amount,annualInterest,profit,currentDate);
 
-        resultRepo.save(result);
+        save(result);
 
         return result;
     }
